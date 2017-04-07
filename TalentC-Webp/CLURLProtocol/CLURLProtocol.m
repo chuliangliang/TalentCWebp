@@ -3,7 +3,7 @@
 //  NewsHunter
 //
 //  Created by chuliangliang on 2017/4/5.
-//  Copyright © 2017年 apus. All rights reserved.
+//  Copyright © 2017年 Talent•C. All rights reserved.
 //
 
 #import "CLURLProtocol.h"

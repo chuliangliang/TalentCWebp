@@ -11,6 +11,8 @@
 typedef NS_ENUM(NSInteger, WEBType) {
     WEBType_UIweb = 0,
     WEBType_WKweb,
+    WEBType_WKjs,
+    WEBType_UIjs,
 };
 
 @interface WebVC : UIViewController

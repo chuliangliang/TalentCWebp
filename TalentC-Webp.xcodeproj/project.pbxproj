@@ -141,6 +141,8 @@
 		284EE41D1E9633210094D78E /* NSURLProtocolWebkitExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 284EE41B1E9633210094D78E /* NSURLProtocolWebkitExt.m */; };
 		284EE4211E9633EB0094D78E /* WebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 284EE41F1E9633EB0094D78E /* WebVC.m */; };
 		284EE4221E9633EB0094D78E /* WebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284EE4201E9633EB0094D78E /* WebVC.xib */; };
+		284EE42D1E972BCC0094D78E /* TanlentC-Webp.js in Resources */ = {isa = PBXBuildFile; fileRef = 284EE42C1E972BCC0094D78E /* TanlentC-Webp.js */; };
+		284EE4351E973A6F0094D78E /* UIImage+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 284EE4341E973A6F0094D78E /* UIImage+Ext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -346,6 +348,9 @@
 		284EE41E1E9633EB0094D78E /* WebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebVC.h; sourceTree = "<group>"; };
 		284EE41F1E9633EB0094D78E /* WebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebVC.m; sourceTree = "<group>"; };
 		284EE4201E9633EB0094D78E /* WebVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebVC.xib; sourceTree = "<group>"; };
+		284EE42C1E972BCC0094D78E /* TanlentC-Webp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "TanlentC-Webp.js"; sourceTree = "<group>"; };
+		284EE4331E973A6F0094D78E /* UIImage+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Ext.h"; sourceTree = "<group>"; };
+		284EE4341E973A6F0094D78E /* UIImage+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Ext.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +385,8 @@
 		284EE2B51E9628280094D78E /* TalentC-Webp */ = {
 			isa = PBXGroup;
 			children = (
+				284EE4321E973A6F0094D78E /* Category */,
+				284EE42B1E972BCC0094D78E /* Resource */,
 				284EE4161E9633210094D78E /* CLURLProtocol */,
 				284EE2D71E962E580094D78E /* Third */,
 				284EE2B91E9628280094D78E /* AppDelegate.h */,
@@ -696,6 +703,23 @@
 			path = NSURLProtocolExt;
 			sourceTree = "<group>";
 		};
+		284EE42B1E972BCC0094D78E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				284EE42C1E972BCC0094D78E /* TanlentC-Webp.js */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		284EE4321E973A6F0094D78E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				284EE4331E973A6F0094D78E /* UIImage+Ext.h */,
+				284EE4341E973A6F0094D78E /* UIImage+Ext.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -727,7 +751,6 @@
 				TargetAttributes = {
 					284EE2B21E9628280094D78E = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 2K8YS59BMF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -756,6 +779,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				284EE2D61E962D250094D78E /* ImageVC.xib in Resources */,
+				284EE42D1E972BCC0094D78E /* TanlentC-Webp.js in Resources */,
 				284EE4221E9633EB0094D78E /* WebVC.xib in Resources */,
 				284EE2C61E9628280094D78E /* LaunchScreen.storyboard in Resources */,
 				284EE2C31E9628280094D78E /* Assets.xcassets in Resources */,
@@ -884,6 +908,7 @@
 				284EE3F61E962E720094D78E /* iterator.c in Sources */,
 				284EE4061E962E720094D78E /* muxread.c in Sources */,
 				284EE30D1E962E580094D78E /* SDWebImageManager.m in Sources */,
+				284EE4351E973A6F0094D78E /* UIImage+Ext.m in Sources */,
 				284EE3CE1E962E720094D78E /* enc_mips32.c in Sources */,
 				284EE3C61E962E720094D78E /* dec_clip_tables.c in Sources */,
 				284EE3C81E962E720094D78E /* dec_mips_dsp_r2.c in Sources */,
@@ -1007,7 +1032,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2K8YS59BMF;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"SD_WEBP=1",
 					"DEBUG=1",
@@ -1016,7 +1041,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "APUSApps.com.TalentC-Webp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Talent.com.TalentC-Webp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1025,13 +1050,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2K8YS59BMF;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = "SD_WEBP=1";
 				INFOPLIST_FILE = "TalentC-Webp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "APUSApps.com.TalentC-Webp";
+				PRODUCT_BUNDLE_IDENTIFIER = "Talent.com.TalentC-Webp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1055,6 +1080,7 @@
 				284EE2CC1E9628280094D78E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

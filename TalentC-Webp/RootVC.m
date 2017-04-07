@@ -26,7 +26,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,6 +55,17 @@
             text_cell = @"WKWebView load webp";
         }
             break;
+        case 3:
+        {
+            text_cell = @"WKWebView load webp With JS";
+        }
+            break;
+        case 4:
+        {
+            text_cell = @"UIWebView load webp With JS";
+        }
+            break;
+
         default:
             break;
     }
@@ -83,7 +94,20 @@
             [self.navigationController pushViewController:web animated:YES];
         }
             break;
-            
+
+        case 3:
+        {
+            WebVC *web = [[WebVC alloc] initWithWebType:WEBType_WKjs];
+            [self.navigationController pushViewController:web animated:YES];
+        }
+            break;
+        case 4:
+        {
+            WebVC *web = [[WebVC alloc] initWithWebType:WEBType_UIjs];
+            [self.navigationController pushViewController:web animated:YES];
+        }
+            break;
+
         default:
             break;
     }
